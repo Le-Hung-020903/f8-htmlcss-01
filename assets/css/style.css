@@ -316,14 +316,13 @@ a {
 }
 .stats .row {
     display: flex;
+    position: relative;
 }
 .stats .img-block,
 .stats .info {
     width: 50%;
 }
-.stats .img-block{
-    position: relative;
-}
+
 .stats .info {
     padding: 79px 0 0 165px;
 }
@@ -331,7 +330,62 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: orange;
+    width: 239px;
+    border-radius: 0px 0px 12px 12px;
+    padding: 45px 22px 40px;
+    background-color: #fff;
+}
+.stats-trend .value {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.6rem;
+    letter-spacing: 0.01em;
+    color: #000339;
+}
+.stats-trend .icon {
+    margin-left: auto;
+}
+.stats-trend .desc {
+    margin-top: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    /* or 150% */
+    color: #a7a7a7;
+}
+.stats-trend .separate {
+    margin-top: 25px;
+    height: 1px;
+    background: #e9e9e9;
+}
+.stats-trend .avatar-block {
+    margin-top: 26px;
+    display: flex;
+    gap: 16px 14px;
+    flex-wrap: wrap;
+}
+.stats-trend .avatar-group {
+    display: flex;
+}
+.stats-trend .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -3px;
+}
+.stats-trend .avatar-1 {
+    background: #1F3BB1;
+    /* line-height: 16px;
+    text-align: center; */
+    font-weight: 450;
+    font-size: 0.7rem;
+    letter-spacing: -0.02em;
+    color: #ffffff;
 }
 .stats .img-block img {
     display: block;
